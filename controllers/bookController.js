@@ -1,7 +1,7 @@
-var Book = require('../models/book');
-var Author = require('../models/author');
-var Genre = require('../models/genre');
-var BookInstance = require('../models/bookinstance');
+var book = require('../models/book');
+var author = require('../models/author');
+var genre = require('../models/genre');
+var bookinstance = require('../models/bookinstance');
 
 const { body,validationResult } = require('express-validator');
 const { sanitizeBody } = require('express-validator');
