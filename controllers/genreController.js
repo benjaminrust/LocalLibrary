@@ -1,9 +1,8 @@
-const validator = require('express-validator');
-
 var Book = require('../models/book');
-var async = require('async');
 var Genre = require('../models/genre');
+var async = require('async');
 
+const validator = require('express-validator');
 const { body,validationResult } = require('express-validator');
 const { sanitizeBody } = require('express-validator');
 
