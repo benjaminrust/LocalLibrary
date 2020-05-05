@@ -1,9 +1,9 @@
-const { body,validationResult } = require('express-validator');
-const { sanitizeBody } = require('express-validator');
-
+var Author = require('../models/author');
 var async = require('async');
 var Book = require('../models/book');
-var Author = require('../models/author');
+
+const { body,validationResult } = require('express-validator');
+const { sanitizeBody } = require('express-validator');
 
 // Display list of all Authors.
 exports.author_list = function(req, res, next) {
